@@ -1,0 +1,80 @@
+{
+  "users": {
+    "6288212520579@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
+    },
+    "6285714627920@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 100
+    }
+  },
+  "chats": {
+    "6288212520579@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    },
+    "6285714627920@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false
+    }
+  },
+  "database": {
+    "cmduser": [
+      {
+        "jid": "6285714627920@s.whatsapp.net",
+        "db": [
+          {
+            "nama": "#menu",
+            "count": 1
+          }
+        ]
+      }
+    ],
+    "cmd": [
+      {
+        "nama": "#menu",
+        "count": 1
+      }
+    ]
+  },
+  "game": {
+    "tebaklagu": [],
+    "family100": [],
+    "math": [],
+    "tebakgambar": [],
+    "tebakkata": [],
+    "lontong": [],
+    "lontong_desk": [],
+    "kalimat": [],
+    "lirik": [],
+    "tebakan": [],
+    "kimia": [],
+    "asahotak": [],
+    "bendera": [],
+    "susunkata": [],
+    "tekateki": [],
+    "kabupaten": [],
+    "anime": [],
+    "waifu": [],
+    "aplikasi": [],
+    "jenaka": []
+  },
+  "settings": {
+    "6288212520579@s.whatsapp.net": {
+      "status": 0,
+      "autobio": false,
+      "templateImage": true,
+      "templateVideo": false,
+      "templateGif": false,
+      "templateMsg": false,
+      "templateLocation": false
+    }
+  },
+  "others": {
+    "vote": []
+  },
+  "sticker": {}
+}
