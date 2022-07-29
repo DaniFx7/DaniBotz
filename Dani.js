@@ -2053,13 +2053,28 @@ headerType: 2
 Dani.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break        
-case 'bacot': case 'katailham': case 'pantunpakboy': case 'sindiran': {
-let anu = await fetchJson(`https://api.akuari.my.id/randomtext/${command}`)
+case 'pantun': case 'nickff': case 'fml': case 'truth': case 'dare': case 'motivasi': case 'quotespubg':  case 'quotesislamic': case 'katailham': case 'katagalau': case 'katabijak':  case 'faktaunik': case 'puisi': case 'katahacker': case 'katasindiran': case 'katacinta': case 'katasenja': case 'katabucin': {
+let anu = await fetchJson(`https://danixcoders.herokuapp.com/api/randomtext/${command}?apikey=${daniapi}`)
 let buttons = [
 {buttonId: `${command}`, buttonText: {displayText: '➡️ NEXT'}, type: 1}
 ]
 let buttonMessage = {
-text: anu.hasil.result,
+text: anu.result,
+footer: `Made With 🤍 Dani | Copyright 2022`,
+buttons: buttons,
+headerType: 2
+}
+Dani.sendMessage(m.chat, buttonMessage, { quoted: m })
+}
+break
+case 'quotes': {
+addCountCmd(`#${command.slice(0)}`, sender, _cmd)
+let anu = await fetchJson(`https://danixcoders.herokuapp.com/api/randomtext/quotes?apikey=${daniapi}`)
+let buttons = [
+{buttonId: `quotes`, buttonText: {displayText: '➡️ NEXT'}, type: 1}
+]
+let buttonMessage = {
+text: `❏ *Author* : ${anu.result.author}\n❏ *Quotes* : ${anu.result.quotes}`,
 footer: `Made With 🤍 Dani | Copyright 2022`,
 buttons: buttons,
 headerType: 2
@@ -3052,10 +3067,26 @@ anu = `╔═════════════════❍
 ║┃
 ║┣━━⊱「  *RANDOM TEXT*  」
 ║┃
+║┣❏ ${prefix}quotes
+║┣❏ ${prefix}quotesanime
+║┣❏ ${prefix}quotesislamic
+║┣❏ ${prefix}quotespubg
+║┣❏ ${prefix}pantun
+║┣❏ ${prefix}puisi
+║┣❏ ${prefix}faktaunik
+║┣❏ ${prefix}katabijak
+║┣❏ ${prefix}katagalau
 ║┣❏ ${prefix}katailham
-║┣❏ ${prefix}sindiran
-║┣❏ ${prefix}pantunpakboy
-║┣❏ ${prefix}bacot
+║┣❏ ${prefix}katahacker
+║┣❏ ${prefix}katasenja
+║┣❏ ${prefix}katabucin
+║┣❏ ${prefix}katacinta
+║┣❏ ${prefix}katasindiran
+║┣❏ ${prefix}dare
+║┣❏ ${prefix}truth
+║┣❏ ${prefix}motivasi
+║┣❏ ${prefix}fml
+║┣❏ ${prefix}nickff
 ║┃
 ║┣━━⊱「  *ENTERTAINMENT MENU*  」
 ║┃
